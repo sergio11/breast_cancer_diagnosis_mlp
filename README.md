@@ -2,6 +2,10 @@
 
 This project utilizes a Multi-Layer Perceptron (MLP) neural network implemented with scikit-learn to perform breast cancer diagnosis based on tumor characteristics extracted from biopsy samples. The MLP model is trained on a dataset containing various features derived from digital images of breast tissue samples, such as mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension.
 
+[![GitHub](https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue?style=flat-square)](https://github.com/sergio11/breast_cancer_diagnosis_mlp)
+[![PyPI](https://img.shields.io/pypi/v/BreastCancerMLPModel.svg?style=flat-square)](https://pypi.org/project/BreastCancerMLPModel/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/sergio11/breast_cancer_diagnosis_mlp/blob/main/LICENSE)
+
 ## Purpose 🎯
 
 The primary objective of this project is to develop an accurate and reliable system for diagnosing breast cancer based on quantitative analysis of cell nuclei characteristics. By leveraging machine learning techniques, specifically MLP neural networks, we aim to create a predictive model capable of classifying tumors as either malignant (cancerous) or benign (non-cancerous) with high accuracy. Early and accurate diagnosis of breast cancer can significantly improve patient outcomes by enabling timely treatment and intervention.
@@ -14,6 +18,61 @@ The primary objective of this project is to develop an accurate and reliable sys
 - Provides prediction capabilities for new biopsy samples.
 - Offers detailed model evaluation metrics, including accuracy and confusion matrix.
 - Supports easy integration into Python applications for breast cancer diagnosis tasks.
+
+## Installation 🚀
+
+You can easily install BreastCancerMLPModel using pip:
+
+```bash
+pip install BreastCancerMLPModel
+```
+## How BreastCancerMLPModel  Works
+
+BreastCancerMLPModel leverages a Multi-Layer Perceptron (MLP) neural network to diagnose breast cancer based on tumor characteristics. Here's how it works:
+
+1. **Initializing the Model**: 
+   - The model is initialized using the `BreastCancerMLPModel` class from the package.
+   - This class encapsulates an MLPClassifier from scikit-learn with predefined parameters.
+
+2. **Training the Model**:
+   - The `fit()` method is called to train the model.
+   - The breast cancer dataset is loaded, split into training and test sets, and scaled using a `StandardScaler`.
+   - The scaled features are used to train the MLP model.
+
+3. **Making Predictions**:
+   - Once the model is trained, predictions can be made using the `predict()` method.
+   - Input data, such as tumor characteristics, is provided to the model in the form of feature values.
+   - The model predicts the diagnosis (Malignant or Benign) based on the input data.
+
+4. **Example Usage**:
+   - In the provided example, two sets of tumor characteristics (`data` and `data2`) are used as input for prediction.
+   - The `predict()` method is called with each set of characteristics, and the predicted diagnosis is printed to the console.
+
+This process enables quick and accurate diagnosis of breast cancer based on tumor characteristics extracted from biopsy samples.
+
+```python
+from BreastCancerMLPModel.BreastCancerMLPModel import BreastCancerMLPModel
+
+# Example usage
+
+# Initialize the model
+model = BreastCancerMLPModel()
+
+# Train the model
+model.fit()
+
+# Make predictions
+
+# Data for prediction 1
+data1 = "mean_radius: 17.99, mean_texture: 10.38, mean_perimeter: 122.8, mean_area: 1001, mean_smoothness: 0.1184, mean_compactness: 0.2776, mean_concavity: 0.3001, mean_concave_points: 0.1471, mean_symmetry: 0.2419, mean_fractal_dimension: 0.07871, se_radius: 1.095, se_texture: 0.9053, se_perimeter: 8.589, se_area: 153.4, se_smoothness: 0.006399, se_compactness: 0.04904, se_concavity: 0.05373, se_concave_points: 0.01587, se_symmetry: 0.03003, se_fractal_dimension: 0.006193, worst_radius: 25.38, worst_texture: 17.33, worst_perimeter: 184.6, worst_area: 2019, worst_smoothness: 0.1622, worst_compactness: 0.6656, worst_concavity: 0.7119, worst_concave_points: 0.2654, worst_symmetry: 0.4601, worst_fractal_dimension: 0.1189"
+prediction1 = model.predict(data1)
+print("Predicted diagnosis for data 1:", prediction1) ## ('Maligno', 1.0)
+
+# Data for prediction 2
+data2 = "mean_radius: 13.08, mean_texture: 15.71, mean_perimeter: 85.63, mean_area: 520, mean_smoothness: 0.1075, mean_compactness: 0.127, mean_concavity: 0.04568, mean_concave_points: 0.0311, mean_symmetry: 0.1967, mean_fractal_dimension: 0.06811, se_radius: 0.1852, se_texture: 0.7477, se_perimeter: 1.383, se_area: 14.67, se_smoothness: 0.004097, se_compactness: 0.01898, se_concavity: 0.01698, se_concave_points: 0.00649, se_symmetry: 0.01678, se_fractal_dimension: 0.002425, worst_radius: 14.5, worst_texture: 20.49, worst_perimeter: 96.09, worst_area: 630.5, worst_smoothness: 0.1312, worst_compactness: 0.2776, worst_concavity: 0.189, worst_concave_points: 0.07283, worst_symmetry: 0.3184, worst_fractal_dimension: 0.08183"
+prediction2 = model.predict(data2)
+print("Predicted diagnosis for data 2:", prediction2) ##('Benigno', 0.9999982189891156)
+```
 
 ## Dataset 📊
 
