@@ -1,24 +1,25 @@
-# 🩺 Breast Cancer Diagnosis with MLP 🧠
+# Breast Cancer Diagnosis with MLP 🩺💻
 
-This project aims to develop a machine learning model for the diagnosis of breast cancer using a Multi-Layer Perceptron (MLP) classifier. The dataset utilized for this task is the Breast Cancer Wisconsin dataset, obtained from the UCI Machine Learning Repository.
+This project utilizes a Multi-Layer Perceptron (MLP) neural network implemented with scikit-learn to perform breast cancer diagnosis based on tumor characteristics extracted from biopsy samples. The MLP model is trained on a dataset containing various features derived from digital images of breast tissue samples, such as mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension.
 
-## 🎯 Purpose
+## Purpose 🎯
 
-The main purpose of this code is to demonstrate the application of a MLP classifier in diagnosing breast cancer based on features extracted from fine needle aspiration (FNA) images of breast masses. The features describe various characteristics of cell nuclei present in the images. By analyzing these features, the MLP classifier can learn to differentiate between benign and malignant tumors, thereby aiding in the early detection and diagnosis of breast cancer.
+The primary objective of this project is to develop an accurate and reliable system for diagnosing breast cancer based on quantitative analysis of cell nuclei characteristics. By leveraging machine learning techniques, specifically MLP neural networks, we aim to create a predictive model capable of classifying tumors as either malignant (cancerous) or benign (non-cancerous) with high accuracy. Early and accurate diagnosis of breast cancer can significantly improve patient outcomes by enabling timely treatment and intervention.
 
-## 🛠️ Decision Making
+## Key Features 🔑
 
-1. **Model Selection**: The MLP classifier from the scikit-learn library is chosen for its ability to capture complex patterns in the data. MLPs are capable of learning non-linear relationships between features, making them suitable for this classification task.
+- Utilizes an MLP neural network for breast cancer diagnosis.
+- Preprocesses input data using feature scaling with StandardScaler.
+- Implements training and evaluation functionalities.
+- Provides prediction capabilities for new biopsy samples.
+- Offers detailed model evaluation metrics, including accuracy and confusion matrix.
+- Supports easy integration into Python applications for breast cancer diagnosis tasks.
 
-2. **Data Preprocessing**: Prior to training the model, the dataset is divided into training and testing sets using a standard 80-20 split. Additionally, feature scaling is performed using StandardScaler to standardize the feature values, ensuring that each feature contributes equally to the learning process and improving convergence speed.
+## Dataset 📊
 
-3. **Model Training**: The MLP model is instantiated with two hidden layers containing 100 and 50 neurons respectively. The 'adam' solver is chosen for optimization, and the model is trained with a maximum of 500 iterations. The 'verbose' parameter is set to 10 to display progress during training.
+The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) dataset, available in scikit-learn's built-in datasets module. It consists of features computed from digital images of fine needle aspirate (FNA) of breast masses. Each feature represents various characteristics of cell nuclei present in the images. The dataset contains both malignant and benign tumor samples, making it suitable for binary classification tasks.
 
-4. **Evaluation**: After training, the model is evaluated using the testing set. Accuracy score and confusion matrix are computed to assess the performance of the model in diagnosing breast cancer.
-
-## 🚀 Usage
-
-To run the code, ensure that you have the required dependencies installed. You can execute the script in any Python environment that supports scikit-learn. Simply clone the repository and execute the `breast_cancer_diagnosis_mlp.py` script. Make sure to adjust any parameters or configurations as needed for your specific use case.
+### Features and Descriptions
 
 | Label                     | Meaning                                   | Weight in Diagnosis | Description                                           |
 |---------------------------|-------------------------------------------|---------------------|-------------------------------------------------------|
@@ -53,5 +54,18 @@ To run the code, ensure that you have the required dependencies installed. You c
 | worst_concave_points      | Worst value of concave points            | Very High           | Worst value of cell nuclei concave points                              |
 | worst_symmetry            | Worst value of symmetry                  | Low                 | Worst value of cell nuclei symmetry                                    |
 | worst_fractal_dimension   | Worst value of fractal dimension         | Low                 | Worst value of cell nuclei fractal dimension                           |
+
+## Usage 🚀
+
+1. **Training the Model**: The model is trained using the `fit` method, which loads the dataset, preprocesses the input features, and trains the MLP classifier.
+
+2. **Making Predictions**: After training, the model can be used to make predictions on new biopsy samples using the `predict` method. The input data should be provided in a specific format, including features such as mean radius, texture, perimeter, etc.
+
+3. **Evaluation**: The model's performance can be evaluated using various metrics, including accuracy and confusion matrix, to assess its diagnostic capabilities.
+
+## Dependencies 🛠️
+
+- scikit-learn
+- numpy
 
 
