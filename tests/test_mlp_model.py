@@ -1,7 +1,7 @@
 import unittest
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
-from mlp_breast_cancer_diagnosis.mlp_model import BreastCancerMLPModel
+from BreastCancerMLPModel.BreastCancerMLPModel import BreastCancerMLPModel
 
 class TestMLPModel(unittest.TestCase):
     def setUp(self):

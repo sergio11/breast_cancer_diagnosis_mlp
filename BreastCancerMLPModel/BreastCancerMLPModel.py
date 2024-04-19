@@ -2,12 +2,6 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
-import numpy as np
-
-from sklearn.datasets import load_breast_cancer
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
-from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, confusion_matrix
 import numpy as np
 
@@ -72,7 +66,6 @@ class BreastCancerMLPModel:
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
         # Scale features
-        # Scale the features to ensure they are on the same scale
         X_train_scaled = self.scaler.fit_transform(X_train)
         X_test_scaled = self.scaler.transform(X_test)
 
@@ -80,13 +73,19 @@ class BreastCancerMLPModel:
         self.model.fit(X_train_scaled, y_train)
 
         # Evaluate the model
-        train_accuracy = self.model.score(X_train_scaled, y_train)
-        test_accuracy = self.model.score(X_test_scaled, y_test)
+        train_accuracy = accuracy_score(y_train, self.model.predict(X_train_scaled))
+        test_accuracy = accuracy_score(y_test, self.model.predict(X_test_scaled))
         
         # Print results
         print("Model trained successfully.")
         print("Train Accuracy:", train_accuracy)
         print("Test Accuracy:", test_accuracy)
+
+        # Calculate and print confusion matrix
+        train_conf_matrix = confusion_matrix(y_train, self.model.predict(X_train_scaled))
+        test_conf_matrix = confusion_matrix(y_test, self.model.predict(X_test_scaled))
+        print("Train Confusion Matrix:\n", train_conf_matrix)
+        print("Test Confusion Matrix:\n", test_conf_matrix)
 
     def predict(self, data):
         """

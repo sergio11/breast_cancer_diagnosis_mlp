@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='BreastCancerMLPModel',  
-    version='0.0.30',
+    version='0.0.31',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -35,7 +35,7 @@ This setup script configures the installation of the BreastCancerMLPModel packag
 
 Project Details:
 - Name: BreastCancerMLPModel
-- Version: 0.0.30
+- Version: 0.0.31
 - Author: Sergio Sánchez Sánchez
 - Email: dreamsoftware92@gmail.com
 - Description: A package for breast cancer diagnosis using MLP classifier.
