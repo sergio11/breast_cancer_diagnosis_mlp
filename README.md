@@ -12,12 +12,12 @@ The primary objective of this project is to develop an accurate and reliable sys
 
 ## Key Features 🔑
 
-- Utilizes an MLP neural network for breast cancer diagnosis.
-- Preprocesses input data using feature scaling with StandardScaler.
-- Implements training and evaluation functionalities.
-- Provides prediction capabilities for new biopsy samples.
-- Offers detailed model evaluation metrics, including accuracy and confusion matrix.
-- Supports easy integration into Python applications for breast cancer diagnosis tasks.
+- Utilizes an MLP neural network for breast cancer diagnosis. 🤖
+- Preprocesses input data using feature scaling with StandardScaler. 📊
+- Implements training and evaluation functionalities. 📈
+- Provides prediction capabilities for new biopsy samples. ⚡
+- Offers detailed model evaluation metrics, including accuracy and confusion matrix. 📊
+- Supports easy integration into Python applications for breast cancer diagnosis tasks. 🐍
 
 ## Installation 🚀
 
@@ -26,29 +26,31 @@ You can easily install BreastCancerMLPModel using pip:
 ```bash
 pip install BreastCancerMLPModel
 ```
-## How BreastCancerMLPModel  Works
+## How BreastCancerMLPModel Works 🤖
 
-BreastCancerMLPModel leverages a Multi-Layer Perceptron (MLP) neural network to diagnose breast cancer based on tumor characteristics. Here's how it works:
+BreastCancerMLPModel utilizes an MLP neural network for breast cancer diagnosis. Here's how it works:
 
-1. **Initializing the Model**: 
+1. **Initializing the Model** 🛠️:
    - The model is initialized using the `BreastCancerMLPModel` class from the package.
    - This class encapsulates an MLPClassifier from scikit-learn with predefined parameters.
 
-2. **Training the Model**:
-   - The `fit()` method is called to train the model.
-   - The breast cancer dataset is loaded, split into training and test sets, and scaled using a `StandardScaler`.
-   - The scaled features are used to train the MLP model.
+2. **Preprocessing Input Data** 📊:
+   - Input data undergoes preprocessing using feature scaling with StandardScaler.
+   - Scaling ensures that features are on the same scale, improving model performance.
 
-3. **Making Predictions**:
-   - Once the model is trained, predictions can be made using the `predict()` method.
-   - Input data, such as tumor characteristics, is provided to the model in the form of feature values.
-   - The model predicts the diagnosis (Malignant or Benign) based on the input data.
+3. **Training and Evaluation** 📈:
+   - The model is trained using the `fit()` method, which splits the dataset, scales features, and trains the MLP model.
+   - Evaluation metrics, including accuracy and confusion matrix, are provided to assess model performance.
 
-4. **Example Usage**:
-   - In the provided example, two sets of tumor characteristics (`data` and `data2`) are used as input for prediction.
-   - The `predict()` method is called with each set of characteristics, and the predicted diagnosis is printed to the console.
+4. **Making Predictions** ⚡:
+   - The `predict()` method enables prediction capabilities for new biopsy samples.
+   - Input data, such as tumor characteristics, is provided to the model for prediction.
 
-This process enables quick and accurate diagnosis of breast cancer based on tumor characteristics extracted from biopsy samples.
+5. **Integration with Python Applications** 🐍:
+   - BreastCancerMLPModel supports easy integration into Python applications for breast cancer diagnosis tasks.
+   - This allows seamless incorporation of the model into existing workflows for efficient diagnosis.
+
+This approach ensures accurate and reliable breast cancer diagnosis based on tumor characteristics, enabling better patient care and treatment decisions.
 
 ```python
 from BreastCancerMLPModel.BreastCancerMLPModel import BreastCancerMLPModel
@@ -127,14 +129,29 @@ The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) dat
 - scikit-learn
 - numpy
 
-
 ## License 📜
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/sergio11/breast_cancer_diagnosis_mlp/blob/main/LICENSE) file for details.
 
 ## Acknowledgments 🙏
 
-- Special thanks to the open-source community for their contributions.
+This dataset is a copy of the UCI ML Breast Cancer Wisconsin (Diagnostic) datasets. [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)).
+
+The input features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
+
+The separation plane described above was obtained using the Multiple Surface Method Tree (MSM-T) [K. P. Bennett, "Constructing a Decision Tree by Linear Programming". Proceedings of the 4th Midwest Artificial Intelligence and Cognitive Science Society, pp. 97-101, 1992], a classification method that uses linear programming to build a decision tree. Relevant features were selected through an exhaustive search in the space of 1-4 features and 1-3 separation planes.
+
+The actual linear program used to obtain the separation plane in the three-dimensional space is described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34].
+
+This database is also available through the UW CS ftp server:
+
+ftp ftp.cs.wisc.edu cd math-prog/cpo-dataset/machine-learn/WDBC/
+
+References:
+
+1. W.N. Street, W.H. Wolberg and O.L. Mangasarian. Nuclear feature extraction for breast tumor diagnosis. IS&T/SPIE 1993 International Symposium on Electronic Imaging: Science and Technology, volume 1905, pages 861-870, San Jose, CA, 1993.
+2. O.L. Mangasarian, W.N. Street and W.H. Wolberg. Breast cancer diagnosis and prognosis via linear programming. Operations Research, 43(4), pages 570-577, July-August 1995.
+3. W.H. Wolberg, W.N. Street, and O.L. Mangasarian. Machine learning techniques to diagnose breast cancer from fine-needle aspirates. Cancer Letters 77 (1994) 163-171.
 
 ## Contribution
 
