@@ -1,10 +1,20 @@
 # Breast Cancer Diagnosis with MLP 🩺💻
 
-This project utilizes a Multi-Layer Perceptron (MLP) neural network implemented with scikit-learn to perform breast cancer diagnosis based on tumor characteristics extracted from biopsy samples. The MLP model is trained on a dataset containing various features derived from digital images of breast tissue samples, such as mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension.
-
 [![GitHub](https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue?style=flat-square)](https://github.com/sergio11/breast_cancer_diagnosis_mlp)
 [![PyPI](https://img.shields.io/pypi/v/BreastCancerMLPModel.svg?style=flat-square)](https://pypi.org/project/BreastCancerMLPModel/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/sergio11/breast_cancer_diagnosis_mlp/blob/main/LICENSE)
+
+🧠 This project harnesses the power of a Multi-Layer Perceptron (MLP) neural network, implemented with scikit-learn, to perform breast cancer diagnosis based on tumor characteristics extracted from biopsy samples. The MLP model is a type of artificial neural network designed to learn complex patterns in data, making it well-suited for tasks like medical diagnosis.
+
+🔬 The MLP model is trained on a comprehensive dataset containing various features derived from digital images of breast tissue samples. These features include mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension. Each feature provides valuable information about the physical properties and spatial arrangements of cells within the tissue, enabling the model to learn to distinguish between benign and malignant tumors.
+
+💡 By analyzing these features, the MLP model can effectively classify breast tumors as either benign or malignant, providing valuable diagnostic information to healthcare professionals. This approach offers a non-invasive and automated method for cancer detection, potentially improving patient outcomes through earlier detection and treatment.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+  <img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white" />
+</p>
 
 ## Purpose 🎯
 
