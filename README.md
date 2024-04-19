@@ -69,3 +69,25 @@ The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) dat
 - numpy
 
 
+## License 📜
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/sergio11/breast_cancer_diagnosis_mlp/blob/main/LICENSE) file for details.
+
+## Acknowledgments 🙏
+
+- Special thanks to the open-source community for their contributions.
+
+## Contribution
+
+Contributions to BreastCancerMLPModel are highly encouraged! If you're interested in adding new features, resolving bugs, or enhancing the project's functionality, please feel free to submit pull requests.
+
+## Get in Touch 📬
+
+BreastCancerMLPModel is developed and maintained by **Sergio Sánchez Sánchez** (Dream Software). Special thanks to the open-source community and the contributors who have made this project possible. If you have any questions, feedback, or suggestions, feel free to reach out at  [dreamsoftware92@gmail.com](mailto:dreamsoftware92@gmail.com).
+
+## Please Share & Star the repository to keep me motivated.
+  <a href = "https://github.com/sergio11/breast_cancer_diagnosis_mlp/stargazers">
+     <img src = "https://img.shields.io/github/stars/sergio11/breast_cancer_diagnosis_mlp" />
+  </a>
+
+
