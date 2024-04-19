@@ -171,6 +171,10 @@ Contributions to BreastCancerMLPModel are highly encouraged! If you're intereste
 
 BreastCancerMLPModel is developed and maintained by **Sergio Sánchez Sánchez** (Dream Software). Special thanks to the open-source community and the contributors who have made this project possible. If you have any questions, feedback, or suggestions, feel free to reach out at  [dreamsoftware92@gmail.com](mailto:dreamsoftware92@gmail.com).
 
+## Visitors Count
+
+<img width="auto" src="https://profile-counter.glitch.me/breast_cancer_diagnosis_mlp/count.svg" />
+
 ## Please Share & Star the repository to keep me motivated.
   <a href = "https://github.com/sergio11/breast_cancer_diagnosis_mlp/stargazers">
      <img src = "https://img.shields.io/github/stars/sergio11/breast_cancer_diagnosis_mlp" />
