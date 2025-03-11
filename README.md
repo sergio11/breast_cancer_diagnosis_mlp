@@ -18,6 +18,12 @@
 
 🙏 I would like to extend my heartfelt gratitude to [Santiago Hernández, an expert in Cybersecurity and Artificial Intelligence](https://www.udemy.com/user/shramos/). His incredible course on Deep Learning, available at Udemy, was instrumental in shaping the development of this project. The insights and techniques learned from his course were crucial in crafting the neural network architecture used in this classifier.
 
+## ⚠️ Disclaimer
+
+This project is designed **solely for educational and learning purposes**. The goal is to explore and experiment with the application of **Multi-Layer Perceptron (MLP)** models for breast cancer diagnosis, utilizing tumor characteristics from biopsy samples to train the model. It is intended to enhance knowledge in the fields of machine learning, artificial intelligence, and medical diagnostics, but it is **not intended for real-world clinical use**.
+
+The **MLP model** in this project demonstrates the potential of machine learning in medical diagnostics, but it should not be considered a substitute for professional medical advice, diagnosis, or treatment. It is crucial that the results from this model are not used in actual medical practice without appropriate validation by healthcare professionals. The dataset used in this project is publicly available and serves only as an academic example for developing a machine learning model.
+
 ## 🌟 Explore My Other Cutting-Edge AI Projects! 🌟
 
 If you found this project intriguing, I invite you to check out my other AI and machine learning initiatives, where I tackle real-world challenges across various domains:
@@ -181,6 +187,12 @@ The dataset used in this project is the Breast Cancer Wisconsin (Diagnostic) dat
 ## License 📜
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/sergio11/breast_cancer_diagnosis_mlp/blob/main/LICENSE) file for details.
+
+## ⚠️ Disclaimer
+
+This project is designed **solely for educational and learning purposes**. The goal is to explore and experiment with the application of **Multi-Layer Perceptron (MLP)** models for breast cancer diagnosis, utilizing tumor characteristics from biopsy samples to train the model. It is intended to enhance knowledge in the fields of machine learning, artificial intelligence, and medical diagnostics, but it is **not intended for real-world clinical use**.
+
+The **MLP model** in this project demonstrates the potential of machine learning in medical diagnostics, but it should not be considered a substitute for professional medical advice, diagnosis, or treatment. It is crucial that the results from this model are not used in actual medical practice without appropriate validation by healthcare professionals. The dataset used in this project is publicly available and serves only as an academic example for developing a machine learning model.
 
 ## Acknowledgments 🙏
 
