@@ -1,7 +1,6 @@
 # Breast Cancer Diagnosis with MLP 🩺💻
 
 [![GitHub](https://img.shields.io/badge/GitHub-View%20on%20GitHub-blue?style=flat-square)](https://github.com/sergio11/breast_cancer_diagnosis_mlp)
-[![PyPI](https://img.shields.io/pypi/v/BreastCancerMLPModel.svg?style=flat-square)](https://pypi.org/project/BreastCancerMLPModel/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/sergio11/breast_cancer_diagnosis_mlp/blob/main/LICENSE)
 
 🧠 This project harnesses the power of a Multi-Layer Perceptron (MLP) neural network, implemented with scikit-learn, to perform breast cancer diagnosis based on tumor characteristics extracted from biopsy samples. The MLP model is a type of artificial neural network designed to learn complex patterns in data, making it well-suited for tasks like medical diagnosis.
@@ -74,13 +73,6 @@ The primary objective of this project is to develop an accurate and reliable sys
 - Offers detailed model evaluation metrics, including accuracy and confusion matrix. 📊
 - Supports easy integration into Python applications for breast cancer diagnosis tasks. 🐍
 
-## Installation 🚀
-
-You can easily install BreastCancerMLPModel using pip:
-
-```bash
-pip install BreastCancerMLPModel
-```
 ## How BreastCancerMLPModel Works 🤖
 
 BreastCancerMLPModel utilizes an MLP neural network for breast cancer diagnosis. Here's how it works:
